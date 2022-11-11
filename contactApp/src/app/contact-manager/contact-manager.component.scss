@@ -1,0 +1,32 @@
+$light-color: #bcaed3;
+$dark-color: #7d6f9b;
+
+.item {
+  background-color: #d6cfe7;
+  width: 60%;
+  margin-left:20%;
+  margin-right: 20%;
+  border-radius: 100px;
+  .dp {
+    width: 70%;
+    height: 250px;
+    border-radius: 300px;
+  }
+  .bgroup {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30% !important;
+    button {
+      width: 35px;
+      background-color: $light-color !important;
+      color: #090909;
+      border-radius: 20px;
+      font-style: italic;
+    }
+  }
+  .fields {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30% !important;
+  }
+}

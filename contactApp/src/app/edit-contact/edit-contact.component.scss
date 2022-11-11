@@ -1,0 +1,17 @@
+.user-details {
+  .card {
+    border-radius: 50px;
+    background-color: #d6cfe7;
+
+    input,
+    select {
+      padding: 5px;
+      margin-top: 10px;
+    }
+  }
+  img{
+    width: 100%;
+    height: 380px;
+    border-radius: 50px;
+  }
+}

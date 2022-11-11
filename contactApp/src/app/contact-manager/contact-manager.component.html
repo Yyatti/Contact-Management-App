@@ -1,0 +1,80 @@
+<div class="container text-center">
+  <div class="row">
+    <div class="col-8 text-end">
+      <h1 class="my-5">CONTACTS APPLICATION</h1>
+    </div>
+    <div class="col-4 text-start">
+      <a href="/contacts/add" class="btn btn-dark my-5">
+        <i class="fa fa-plus-circle"></i>Add New</a
+      >
+    </div>
+    <span>
+      Welcome to <strong> CONTACT APPLICATION! </strong> You can manage your
+      contacts using this application. You can also create new, delete existing,
+      edit or update existing and view your existing contacts usinf this
+      application!
+    </span>
+  </div>
+
+  <!--search bar component-->
+  <app-search (searchTextChanged)="onSearchTextEntered($event)"></app-search>
+
+  <!--spinner on loding-->
+  <div *ngIf="loading">
+    <app-spinner></app-spinner>
+  </div>
+
+  <!--error message-->
+  <div *ngIf="!loading && errorMessage">
+    <div class="container">
+      <h1 class="text-danger">{{ errorMessage }}</h1>
+    </div>
+  </div>
+  <ng-container *ngIf="!loading && contacts.length > 0">
+    <div *ngFor="let contact of contacts" class="item shadow-lg my-5">
+      <div
+        class="row"
+        *ngIf="
+          searchText === '' || contact.name.toLowerCase().includes(searchText)
+        "
+      >
+        <div class="col-6">
+          <img src="{{ contact.photo }}" alt="user" class="img-fluid my-5 dp" />
+        </div>
+        <div class="col-6">
+          <div class="row">
+            <ul class="col-lg-8 fields list-unstyled">
+              <li>{{ contact.name }}</li>
+              <li>{{ contact.email }}</li>
+              <li>{{ contact.mobile }}</li>
+            </ul>
+
+            <div class="col-lg-4 bgroup">
+              <button
+                type="button"
+                title="Click to view full data"
+                routerLink="/contacts/view/{{ contact.id }}"
+              >
+                <i class="fa fa-eye"></i>
+              </button>
+              <button
+                type="button"
+                title="Click to edit this contact"
+                routerLink="/contacts/edit/{{ contact.id }}"
+              >
+                <i class="fa fa-pen"></i>
+              </button>
+              <button
+                type="button"
+                title="Click to permanently delete this data "
+                (click)="deleteContact(contact.id)"
+              >
+                <i class="fa fa-trash"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div></div
+  ></ng-container>
+</div>
+<!--This is the main component of contact app and can also be called admin portal-->

@@ -1,0 +1,40 @@
+<div class="container text-center my-3">
+  <h1 class="my-4"><i class="fa fa-pen"></i> View Contacts</h1>
+  <span> All Details of the entered userId is as follow- </span>
+</div>
+
+<!--spinner on loding-->
+<div *ngIf="loading">
+  <app-spinner></app-spinner>
+</div>
+
+<!--error message-->
+<div *ngIf="!loading && errorMessage">
+  <div class="container">
+    <h1 class="text-danger">{{ errorMessage }}</h1>
+  </div>
+</div>
+
+<div
+  *ngIf="!loading && isNotEmpty()"
+  class="container my-5 text-center user-details"
+>
+  <div class="row justify-content-center">
+    <div class="col-3">
+      <img src="{{ contact.photo }}" alt="user picture" class="img-fluid" />
+    </div>
+    <div class="col-4">
+      <ul class="d-flex flex-column card p-3 mt-lg-5 shadow-lg list-unstyled">
+        <li><strong>Full Name: </strong>{{ contact.name }}</li>
+        <li><strong>Email Id: </strong>{{ contact.email }}</li>
+        <li><strong>Mobile No: </strong>{{ contact.mobile }}</li>
+        <li><strong>Company: </strong>{{ contact.company }}</li>
+        <li><strong>Title: </strong>{{ contact.title }}</li>
+        <li><strong>Group Id: </strong>{{ contact.groupId }}</li>
+      </ul>
+    </div>
+  </div>
+  <button class="btn btn-dark mt-5" type="reset" routerLink="/contacts/admin">
+    <i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Go Back
+  </button>
+</div>

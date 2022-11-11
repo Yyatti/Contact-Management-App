@@ -1,0 +1,19 @@
+.brand {
+  color: #fff;
+  background-color: #7d6f9b;
+  margin-bottom: -2%;
+  margin-left: -1.7px;
+  padding: 10px;
+  h1 {
+    font-weight: 800;
+  }
+  .links {
+    span {
+      a {
+        display: flex;
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+}

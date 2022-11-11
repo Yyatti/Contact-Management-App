@@ -1,0 +1,100 @@
+<div class="container text-center my-3">
+  <h1 class="my-5"><i class="fa fa-pen"></i> Add Contacts</h1>
+  <span>
+    You can create new contact here by filling the below fields and clicking
+    create!
+  </span>
+</div>
+<div class="container my-5 text-center user-details">
+  <div class="row justify-content-center">
+    <div class="col-3">
+      <img
+        *ngIf="!contact.photo"
+        src="../../assets/user.png"
+        alt="user picture"
+        class="my-5 img-fluid"
+      />
+      <img
+        *ngIf="contact.photo"
+        src="{{ contact.photo }}"
+        alt="user picture"
+        class="my-5 img-fluid"
+      />
+      <span class="mt-2">
+        <button class="btn btn-dark" type="submit" (click)="addSubmit()">Create</button>
+        <button class="btn btn-dark" type="reset" routerLink="/contacts/admin">Close</button>
+      </span>
+    </div>
+    <!-- <pre>{{ contact | json }}</pre> -->
+
+    <!--spinner on loding-->
+    <div *ngIf="loading">
+      <app-spinner></app-spinner>
+    </div>
+
+    <!--error message-->
+    <div *ngIf="!loading && errorMessage">
+      <div class="container">
+        <h1 class="text-danger">{{ errorMessage }}</h1>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <form class="d-flex flex-column card p-4 shadow-lg">
+        <input
+          [(ngModel)]="contact.id"
+          name="id"
+          type="text"
+          placeholder="ID"
+        />
+        <input
+          [(ngModel)]="contact.name"
+          name="name"
+          type="text"
+          placeholder="Full Name"
+        />
+        <input
+          [(ngModel)]="contact.photo"
+          name="photo"
+          type="text"
+          placeholder="Photo URL"
+        />
+        <input
+          [(ngModel)]="contact.email"
+          name="email"
+          type="text"
+          placeholder="Email Id"
+        />
+        <input
+          [(ngModel)]="contact.mobile"
+          name="mobile"
+          type="text"
+          placeholder="Mobile Number"
+        />
+        <input
+          [(ngModel)]="contact.company"
+          name="company"
+          type="text"
+          placeholder="Company"
+        />
+        <input
+          [(ngModel)]="contact.title"
+          name="title"
+          type="text"
+          placeholder="Title"
+        />
+        <select
+          [(ngModel)]="contact.groupId"
+          name="groupId"
+          id="gp"
+          title="group-select"
+        >
+          <option selected>Select a Group</option>
+          <option [value]="group.id" *ngFor="let group of groups">
+            {{ group.name }}
+          </option>
+        </select>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,132 @@
+{
+  "contacts": [
+    {
+      "id": "g1",
+      "name": "jean",
+      "company": "mondt",
+      "email": "gmaster@gmail.com",
+      "title": "ashuu",
+      "mobile": "9845762982",
+      "photo": "https://picsum.photos/100",
+      "groupId": "2"
+    },
+    {
+      "id": "g2",
+      "name": "Beidou",
+      "company": "liyue",
+      "email": "banu@gmail.com",
+      "title": "banu",
+      "mobile": "876576298222222",
+      "photo": "https://picsum.photos/700",
+      "groupId": "1"
+    },
+    {
+      "id": "g3",
+      "name": "klee",
+      "company": "mondt",
+      "email": "alice@gmail.com",
+      "title": "klee",
+      "mobile": "1234562982",
+      "photo": "https://picsum.photos/300",
+      "groupId": "2"
+    },
+    {
+      "id": "g4",
+      "name": "miko",
+      "company": "inazuma",
+      "email": "guji@gmail.com",
+      "title": "yae",
+      "mobile": "9000000000",
+      "photo": "https://picsum.photos/400",
+      "groupId": "1"
+    },
+    {
+      "id": "g9",
+      "name": "xiao",
+      "company": "liyue",
+      "email": "atlus@gmail.com",
+      "title": "yaksha",
+      "mobile": "8885762982",
+      "photo": "https://picsum.photos/500",
+      "groupId": "3"
+    },
+    {
+      "id": "g5",
+      "name": "ayato",
+      "company": "inazuma",
+      "email": "ayakasimp@gmail.com",
+      "title": "toto",
+      "mobile": "7777762982",
+      "photo": "https://picsum.photos/600",
+      "groupId": "3"
+    },
+    {
+      "id": "g6",
+      "name": "ayaka",
+      "company": "inazuma",
+      "email": "ayatosimp@gmail.com",
+      "title": "ayaya",
+      "mobile": "8888762982",
+      "photo": "https://picsum.photos/700",
+      "groupId": "3"
+    },
+    {
+      "id": "g7",
+      "name": "sara",
+      "company": "inazuma",
+      "email": "raidensimp@gmail.com",
+      "title": "kujo",
+      "mobile": "9845722222",
+      "photo": "https://picsum.photos/800",
+      "groupId": "3"
+    },
+    {
+      "id": "g8",
+      "name": "Nahida",
+      "company": "sumeru",
+      "email": "Lesserlord@gmail.com",
+      "title": "kusa",
+      "mobile": "1234567899",
+      "photo": "https://picsum.photos/900",
+      "groupId": "4"
+    },
+    {
+      "id": "gdchvdjcdjc",
+      "name": "nilou",
+      "photo": "https://picsum.photos/1100",
+      "email": " sabzeros@gmail.com",
+      "mobile": "9898989898",
+      "company": "sumeru",
+      "title": "padisarah",
+      "groupId": "4"
+    },
+    {
+      "id": "g13",
+      "name": "dehya",
+      "photo": "https://picsum.photos/1300",
+      "email": "bouncer@gmail.com",
+      "mobile": "9898989898",
+      "company": "armites",
+      "title": "bodyguard",
+      "groupId": "4"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "mondstadh contacts"
+    },
+    {
+      "id": "2",
+      "name": "liyue contacts"
+    },
+    {
+      "id": "3",
+      "name": "Inazuma contacts"
+    },
+    {
+      "id": "4",
+      "name": "Sumeru contacts"
+    }
+  ]
+}

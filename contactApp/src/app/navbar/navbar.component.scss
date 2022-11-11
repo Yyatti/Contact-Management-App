@@ -1,0 +1,18 @@
+$light-color: #bcaed3;
+$dark-color: #7d6f9b;
+.navbar {
+  background-color: $dark-color;
+  color: #fff;
+  .navbar-brand {
+    font-size: x-large;
+    font-weight: 900;
+    i {
+      font-size: xx-large;
+    }
+  }
+  @media only screen and (min-width: 1224px) {
+    .spacing {
+      margin-left: 750px;
+    }
+  }
+}

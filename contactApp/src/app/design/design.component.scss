@@ -1,0 +1,42 @@
+.design {
+  // background-color: rgb(239, 255, 220);
+  background-image: url("../../assets/b5.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-weight: 800;
+  border: 5px solid black;
+  border-style: groove;
+  text-align: center;
+  width: 600px;
+  height: 750px;
+  margin: 40px;
+  margin-left: 300px;
+  border-radius: 60px;
+  overflow: hidden;
+  img {
+    height: 250px;
+    width: 250px;
+    margin-left: 190px;
+    border-radius: 200px;
+    border: 2px solid black;
+  }
+}
+.c1 {
+  color: rgb(0, 0, 150);
+}
+.c2 {
+  color: rgb(202, 2, 2);
+}
+.c3 {
+  color: rgb(5, 80, 4);
+}
+.c4 {
+  color: rgb(0, 0, 150);
+}
+.c5 {
+  color: rgb(202, 2, 2);
+}
+.c6 {
+  color: rgb(208, 94, 0);
+}
